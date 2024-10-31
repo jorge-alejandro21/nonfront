@@ -40,7 +40,7 @@ export const Logo = forwardRef<HTMLDivElement, LogoProps>(
         {...other}
       >
         <img
-          src="" // Cambia esta ruta según sea necesario
+          src="/LOGO.jpeg" // Cambia esta ruta según sea necesario
           alt="Logo"
           style={{ width: '100%', height: '100%' }}
         />
