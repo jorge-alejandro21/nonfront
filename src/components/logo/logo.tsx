@@ -1,4 +1,4 @@
-/*import type { BoxProps } from '@mui/material/Box';
+import type { BoxProps } from '@mui/material/Box';
 import { forwardRef } from 'react';
 import Box from '@mui/material/Box';
 import { RouterLink } from 'src/routes/components';
@@ -40,7 +40,7 @@ export const Logo = forwardRef<HTMLDivElement, LogoProps>(
         {...other}
       >
         <img
-          src="/logo.jpg" // Cambia esta ruta según sea necesario
+          src="" // Cambia esta ruta según sea necesario
           alt="Logo"
           style={{ width: '100%', height: '100%' }}
         />
@@ -48,4 +48,3 @@ export const Logo = forwardRef<HTMLDivElement, LogoProps>(
     );
   }
 );
-*/
