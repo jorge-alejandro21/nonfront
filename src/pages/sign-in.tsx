@@ -7,20 +7,32 @@ import { SignInView } from 'src/sections/auth';
 export default function Page() {
   return (
     <div style={{
-      backgroundImage: 'url("/LOGO.jpeg")',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      filter: 'blur(8px)',
+      position: 'relative',
       height: '100vh',
+      overflow: 'hidden',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      position: 'relative',
     }}>
       <Helmet>
         <title>{`Iniciar Sesion - ${CONFIG.appName}`}</title>
       </Helmet>
 
+      {/* Capa de fondo difuminada */}
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundImage: 'url("ruta/de/tu-imagen.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        filter: 'blur(8px)',
+        zIndex: 0,
+      }} />
+
+      {/* Contenido principal sin difuminar */}
       <div style={{
         position: 'relative',
         zIndex: 1,
